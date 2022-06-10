@@ -1,11 +1,12 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+//console.log('Hello World from inside src/index.ts')
+//import { v4 as uuidV4} from 'uuid'
+//console.log('this is the uuid: ' , uuidV4());
 
-import confetti from 'canvas-confetti';
+const list = document.querySelector<HTMLUListElement>("#list")
+const form = document.getElementById("new-task-form") as HTMLFormElement | null
+const input = document.querySelector<HTMLInputElement>("#new-task-title")
 
-confetti.create(document.getElementById('canvas') as HTMLCanvasElement, {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+console.log('list:' , list)
+console.log('form:' , form)
+console.log('input:' , input)
+
